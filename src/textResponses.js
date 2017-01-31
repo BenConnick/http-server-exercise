@@ -1,0 +1,26 @@
+const hello = "hello world";
+
+const getTimeString = () => {
+	const d = new Date();
+	const dateString = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+	return dateString;
+}
+
+const getTime = (request, response) => {
+	const statusCode = 200;
+	response.writeHead(statusCode, { 'Content-Type': 'text/plain' });
+	response.write(getTimeString());
+	response.end();
+};
+
+const getHello = (request, response) => {
+	const statusCode = 200;
+	response.writeHead(statusCode, { 'Content-Type': 'text/plain' });
+	response.write(hello);
+	response.end();
+};
+
+module.exports.hello = hello;
+module.exports.getTimeString = getTimeString;
+module.exports.getHello = getHello;
+module.exports.getTime = getTime;
