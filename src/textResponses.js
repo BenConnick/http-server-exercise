@@ -1,4 +1,4 @@
-const hello = 'hello world';
+const hello = 'Hello World';
 
 const getTimeString = () => {
   const d = new Date();
