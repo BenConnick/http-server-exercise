@@ -14,10 +14,10 @@ const getTime = (request, response) => {
 };
 
 const getHello = (request, response) => {
-  const statusCode = 200;
-  response.writeHead(statusCode, { 'Content-Type': 'text/plain' });
-  response.write(hello);
-  response.end();
+	const statusCode = 200;
+	response.writeHead(statusCode, { 'Content-Type': 'text/plain' });
+	response.write(hello);
+	response.end();
 };
 
 module.exports.hello = hello;
