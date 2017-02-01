@@ -1,4 +1,4 @@
-const fs = require ('fs');
+const fs = require('fs');
 
 const spongegar = fs.readFileSync(`${__dirname}/../client/spongegar.png`);
 
